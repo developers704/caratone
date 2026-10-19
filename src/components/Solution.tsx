@@ -1,4 +1,4 @@
-import { FileSpreadsheet, Cpu, LayoutDashboard, Calculator, Boxes, Mic } from "lucide-react";
+import { Plug, Cpu, LayoutDashboard, Calculator, Boxes, Mic } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 
 const OUTPUTS = [
@@ -14,8 +14,8 @@ export default function Solution() {
       <div className="mx-auto max-w-7xl px-6">
         <SectionHeading
           eyebrow="The solution"
-          title="One daily upload. A living operating picture."
-          description="Point-of-sale exports flow into a single intelligence layer that every module reads from — so the numbers on the floor match the numbers in the boardroom."
+          title="Direct live sync. A living operating picture."
+          description="CaratOne connects straight into your POS so every module reads from one continuously updated intelligence layer — the numbers on the floor match the numbers in the boardroom, in real time."
         />
 
         <div className="relative mt-20">
@@ -23,11 +23,11 @@ export default function Solution() {
             {/* Input */}
             <div className="glass card-hover flex w-full max-w-xs flex-col items-center rounded-2xl p-6 text-center lg:w-64">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/[0.04] ring-1 ring-white/10">
-                <FileSpreadsheet className="h-6 w-6 text-slate-300" strokeWidth={1.7} />
+                <Plug className="h-6 w-6 text-slate-300" strokeWidth={1.7} />
               </div>
-              <p className="mt-4 text-sm font-semibold text-white">POS CSV Exports</p>
+              <p className="mt-4 text-sm font-semibold text-white">Live POS Connection</p>
               <p className="mt-1.5 text-xs text-slate-500">
-                Sales report, payment transactions, inventory on-hand
+                Sales, payment, and inventory data streamed in real time
               </p>
             </div>
 

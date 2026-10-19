@@ -1,7 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 
 const POINTS = [
-  "Net sales equal the full CSV total — repairs, SPO, and memos stay in, nothing is quietly cleaned away.",
+  "Net sales equal the full ticket total — repairs, special orders, and memos stay in, nothing is quietly cleaned away.",
   "Multi-filter by store, department, design, vendor, class, subclass, paycode, and salesperson.",
   "Top Vendor Models ranked by quantity, with photos, on-hand rollup, and SKU-level drill-down.",
   "Whole-cost margin engine — leadership sees true cost, the floor never sees wholesale.",
@@ -20,8 +20,8 @@ export default function DeepDiveSales() {
               The operational heart of the business
             </h3>
             <p className="mt-4 text-slate-400">
-              Fed by real POS sales and payment exports — not demo numbers. Filter
-              by store, date, pay method, or salesperson, and watch rankings,
+              Fed by a direct POS connection — not batch exports. Filter by
+              store, date, pay method, or salesperson, and watch rankings,
               paycodes, and YoY compare update instantly.
             </p>
             <ul className="mt-7 space-y-3.5">
@@ -59,9 +59,9 @@ export default function DeepDiveSales() {
                     Top Vendor Models
                   </p>
                   {[
-                    { name: "ER-LGE+RBC2.00", dept: "Earrings · Novello Collection", val: "$26,995" },
-                    { name: "EVEBS050VK5W0", dept: "Earrings · Ultimate-Value", val: "$3,299" },
-                    { name: "UKPH000035-1", dept: "Gold Chain · D/C Rope", val: "$20,497" },
+                    { name: "RNG-SOL-1.5CT", dept: "Rings · Solitaire Collection", val: "$18,450" },
+                    { name: "ERG-HAL-0.75", dept: "Earrings · Halo Series", val: "$6,220" },
+                    { name: "CHN-ROPE-14K", dept: "Gold Chain · Rope Classic", val: "$9,780" },
                   ].map((r) => (
                     <div
                       key={r.name}
@@ -77,9 +77,9 @@ export default function DeepDiveSales() {
                 </div>
                 <div className="grid grid-cols-3 gap-2.5">
                   {[
-                    { l: "Net Sales", v: "$329,222" },
-                    { l: "Qty Sold", v: "410" },
-                    { l: "Avg Sale", v: "$803" },
+                    { l: "Net Sales", v: "$214,680" },
+                    { l: "Qty Sold", v: "327" },
+                    { l: "Avg Sale", v: "$656" },
                   ].map((k) => (
                     <div key={k.l} className="rounded-lg border border-white/5 bg-white/[0.02] p-3 text-center">
                       <p className="text-[9px] uppercase tracking-wider text-slate-500">{k.l}</p>

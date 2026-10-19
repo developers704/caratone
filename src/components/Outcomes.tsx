@@ -2,7 +2,7 @@ const STATS = [
   { value: "31", label: "Stores on one console" },
   { value: "20+", label: "Role-permissioned modules" },
   { value: "100K+", label: "Sale lines unified live" },
-  { value: "Same-day", label: "CSV upload to live dashboard" },
+  { value: "Real-time", label: "POS sync to live dashboard" },
 ];
 
 export default function Outcomes() {

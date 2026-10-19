@@ -34,7 +34,7 @@ const MODULES = [
   { icon: MapPin, name: "Stores Map & Info", route: "/stores", desc: "Map, hours, reviews, and store-to-store distance." },
   { icon: Calculator, name: "Price Calculator", route: "/calculator", desc: "SKU pricing, customer offer, and payment methods." },
   { icon: ShieldCheck, name: "Discounting", route: "/discounting", desc: "Discount policy vs. payment ceiling, flagged automatically." },
-  { icon: DatabaseZap, name: "Data Analyst", route: "/analyst", desc: "Upload CSV, query with SQL, chart, and append daily." },
+  { icon: DatabaseZap, name: "Data Analyst", route: "/analyst", desc: "Query live synced data with SQL, chart, and explore." },
   { icon: Users, name: "HR Management", route: "/hr", desc: "Attendance and employee sales, scoped by role." },
   { icon: Search, name: "SKU Lookup", route: "/sku-lookup", desc: "Fast SKU search, role-gated for the floor." },
   { icon: ImageIcon, name: "Image Generation", route: "/images", desc: "Create, compose, and enhance product visuals." },

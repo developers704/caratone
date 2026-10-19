@@ -4,7 +4,7 @@ const POINTS = [
   "Suggested transfers ranked Rush, High, and Fill — never strips a store's last piece.",
   "Donor stores need spare stock and slow sell-through before they're surfaced at all.",
   "Full on-hand snapshot by store, with Individual Cost for leadership and Whole Cost elsewhere.",
-  "Daily on-hand append replaces the live file — whole cost fills automatically from the rules engine.",
+  "On-hand syncs continuously from the POS — whole cost fills automatically from the rules engine.",
 ];
 
 export default function DeepDiveInventory() {
@@ -21,7 +21,7 @@ export default function DeepDiveInventory() {
             </h3>
             <p className="mt-4 text-slate-400">
               Keep one piece at every selling store and move slow surplus where
-              it sells — turning an on-hand CSV into a ranked restock and
+              it sells — turning a live on-hand feed into a ranked restock and
               inter-store transfer list.
             </p>
             <ul className="mt-7 space-y-3.5">
@@ -45,9 +45,9 @@ export default function DeepDiveInventory() {
               </div>
               <div className="divide-y divide-white/5">
                 {[
-                  { sku: "EVEBS050VK5W0", desc: "14KT Ultimate-Value RBC Studs", need: "DBC-GM", from: "VJ-CHAND", qty: "7 pcs" },
-                  { sku: "ER-LGE+RBC2.00", desc: "Novello Collection RBC Studs", need: "DBC-GM", from: "VJ-S.ANITA", qty: "2 pcs" },
-                  { sku: "KKP6527-1", desc: "14KT Tri-Color Valentino Chain", need: "VJ-FRE", from: "VJ-CHAND", qty: "3 pcs" },
+                  { sku: "ERG-HAL-0.75", desc: "14KT Halo Series Diamond Studs", need: "Meridian Mall", from: "Harbor View", qty: "7 pcs" },
+                  { sku: "RNG-SOL-1.5CT", desc: "Solitaire Collection Diamond Ring", need: "Meridian Mall", from: "Lakeside Plaza", qty: "2 pcs" },
+                  { sku: "CHN-TRI-14K", desc: "14KT Tri-Color Statement Chain", need: "Oakwood Center", from: "Harbor View", qty: "3 pcs" },
                 ].map((r) => (
                   <div key={r.sku} className="flex items-center gap-3 px-5 py-3.5">
                     <span className="rounded-md bg-rose/10 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider text-rose">

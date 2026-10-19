@@ -1,4 +1,4 @@
-import { ArrowRight, Mail } from "lucide-react";
+import DemoButton from "./DemoButton";
 
 export default function CTA() {
   return (
@@ -11,18 +11,11 @@ export default function CTA() {
               See CaratOne on your own store data
             </h2>
             <p className="mx-auto mt-4 max-w-lg text-slate-400">
-              Upload a day of your POS export and watch CaratOne turn it into
-              sales intelligence, pricing, and transfers — live.
+              Connect your POS and watch CaratOne turn it into sales
+              intelligence, pricing, and transfers — live.
             </p>
-            <div id="contact" className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <a
-                href="mailto:demo@caratone.ai"
-                className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-gold-soft to-gold px-6 py-3.5 text-sm font-semibold text-[#1a1306] shadow-[0_12px_32px_-10px_rgba(212,175,106,0.7)] transition-transform hover:scale-[1.03] active:scale-[0.98]"
-              >
-                <Mail className="h-4 w-4" />
-                Request a Demo
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </a>
+            <div id="contact" className="mt-9 flex items-center justify-center">
+              <DemoButton />
             </div>
           </div>
         </div>

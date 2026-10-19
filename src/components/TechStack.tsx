@@ -11,7 +11,7 @@ const STACK = [
   },
   {
     group: "Data",
-    items: ["Papa Parse CSV pipelines", "Versioned intelligence store", "DuckDB WASM"],
+    items: ["Live POS sync pipelines", "Versioned intelligence store", "DuckDB WASM"],
   },
   {
     group: "AI",
@@ -23,7 +23,7 @@ const STACK = [
   },
   {
     group: "Ops & QA",
-    items: ["Vitest rule suites", "Daily append pipeline", "Query caching"],
+    items: ["Vitest rule suites", "Real-time sync pipeline", "Query caching"],
   },
 ];
 

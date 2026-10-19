@@ -21,9 +21,10 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-balance text-base text-slate-400 sm:text-lg">
-            CaratOne turns daily POS exports into live sales intelligence, floor
-            pricing, inventory transfers, and compliance — with a built-in AI
-            assistant that knows every store, SKU, and ticket.
+            CaratOne syncs live with your POS to power real-time sales
+            intelligence, floor pricing, inventory transfers, and compliance —
+            with a built-in AI assistant that knows every store, SKU, and
+            ticket.
           </p>
 
           <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row">
@@ -47,7 +48,7 @@ export default function Hero() {
               <Store className="h-3.5 w-3.5 text-teal" /> 31 stores, one console
             </span>
             <span className="flex items-center gap-1.5">
-              <Boxes className="h-3.5 w-3.5 text-violet" /> Daily CSV → live dashboard
+              <Boxes className="h-3.5 w-3.5 text-violet" /> Direct POS sync, live dashboard
             </span>
             <span className="flex items-center gap-1.5">
               <TrendingUp className="h-3.5 w-3.5 text-gold" /> Role-based, audit-ready
@@ -64,15 +65,15 @@ export default function Hero() {
               <span className="h-2.5 w-2.5 rounded-full bg-gold/70" />
               <span className="h-2.5 w-2.5 rounded-full bg-teal/70" />
               <span className="ml-3 font-mono text-[11px] text-slate-500">
-                ai-assistant.caratone.app/sales
+                ai-assistant.caratone.ai/sales
               </span>
             </div>
             <div className="grid grid-cols-1 gap-px bg-white/5 p-px sm:grid-cols-4">
               {[
-                { label: "Net Sales", value: "$329,222", change: "+15.0% YoY", color: "text-teal" },
-                { label: "Unique Transactions", value: "203", change: "Distinct tickets", color: "text-violet" },
-                { label: "Qty Sold", value: "410", change: "Pieces sold", color: "text-gold-soft" },
-                { label: "Avg. Sale Value", value: "$803", change: "Net ÷ pieces", color: "text-rose" },
+                { label: "Net Sales", value: "$214,680", change: "+12.4% YoY", color: "text-teal" },
+                { label: "Unique Transactions", value: "168", change: "Distinct tickets", color: "text-violet" },
+                { label: "Qty Sold", value: "327", change: "Pieces sold", color: "text-gold-soft" },
+                { label: "Avg. Sale Value", value: "$656", change: "Net ÷ pieces", color: "text-rose" },
               ].map((kpi) => (
                 <div key={kpi.label} className="bg-[#0a0b13] p-5 sm:p-6">
                   <p className="text-[11px] uppercase tracking-wider text-slate-500">
@@ -96,17 +97,17 @@ export default function Hero() {
                       <div key={r} className="flex items-center justify-between text-xs">
                         <span className="text-slate-400">
                           {i === 0
-                            ? ["IDDEAL", "CC", "SYNC"][r]
+                            ? ["CARD", "CASH", "FINANCE"][r]
                             : i === 1
-                              ? ["VJ-PALM", "VJ-MOD", "DBC-STOCK"][r]
-                              : ["LADYS RING", "GOLD CHAIN", "PENDANT"][r]}
+                              ? ["Meridian Mall", "Lakeside Plaza", "Harbor View"][r]
+                              : ["Bridal Sets", "Gold Chains", "Diamond Pendants"][r]}
                         </span>
                         <span className="font-mono text-slate-200">
                           {i === 0
-                            ? ["$135,836", "$128,398", "$49,917"][r]
+                            ? ["$91,240", "$78,560", "$32,110"][r]
                             : i === 1
-                              ? ["$26,392", "$24,802", "$20,457"][r]
-                              : ["$116,145", "$54,199", "$36,512"][r]}
+                              ? ["$18,420", "$16,980", "$14,250"][r]
+                              : ["$72,340", "$38,900", "$24,610"][r]}
                         </span>
                       </div>
                     ))}

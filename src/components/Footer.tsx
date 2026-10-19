@@ -23,7 +23,10 @@ const COLUMNS = [
     title: "Company",
     links: [
       { label: "About", href: "#top" },
-      { label: "Contact", href: "mailto:demo@caratone.ai" },
+      {
+        label: "Contact",
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=demo@caratone.ai&su=Demo%20request%20%E2%80%94%20CaratOne",
+      },
       { label: "Request a Demo", href: "#demo" },
     ],
   },
@@ -58,6 +61,9 @@ export default function Footer() {
                   <li key={l.label}>
                     <a
                       href={l.href}
+                      {...(l.href.startsWith("http")
+                        ? { target: "_blank", rel: "noopener noreferrer" }
+                        : {})}
                       className="text-sm text-slate-500 transition-colors hover:text-slate-200"
                     >
                       {l.label}

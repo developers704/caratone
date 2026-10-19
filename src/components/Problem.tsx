@@ -5,12 +5,12 @@ const PROBLEMS = [
   {
     icon: FileWarning,
     title: "POS data is huge and messy",
-    body: "Daily exports mix repairs, financing memos, split salesperson rows, and payment legs that must reconcile to the cent.",
+    body: "Live feeds mix repairs, financing memos, split salesperson rows, and payment legs that must reconcile to the cent.",
   },
   {
     icon: Scale,
     title: "Margin isn't in one column",
-    body: "Whole-cost rules — UV gold, diamond divisors, fixed SKUs — have to beat raw CSV profit before leadership can trust it.",
+    body: "Whole-cost rules — UV gold, diamond divisors, fixed SKUs — have to beat raw ticket profit before leadership can trust it.",
   },
   {
     icon: Route,

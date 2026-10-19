@@ -26,13 +26,13 @@ export default function DeepDiveAI() {
               </div>
               <div className="space-y-4 p-5">
                 <div className="ml-auto max-w-[80%] rounded-2xl rounded-tr-sm bg-white/[0.06] px-4 py-2.5 text-xs text-slate-200">
-                  How did VJ-PALM do today compared to last Saturday?
+                  How did Meridian Mall do today compared to last Saturday?
                 </div>
                 <div className="max-w-[88%] rounded-2xl rounded-tl-sm border border-violet/20 bg-violet/[0.06] px-4 py-3 text-xs leading-relaxed text-slate-200">
-                  VJ-PALM did{" "}
-                  <span className="font-mono text-teal">$26,392</span> today,
-                  up <span className="text-gold-soft">+15.0%</span> vs. the same
-                  Saturday last year. Gold chain and ladies ring led the
+                  Meridian Mall did{" "}
+                  <span className="font-mono text-teal">$18,420</span> today,
+                  up <span className="text-gold-soft">+12.4%</span> vs. the same
+                  Saturday last year. Gold chains and bridal sets led the
                   department mix. Want me to open the Sales Dashboard filtered
                   to this store?
                 </div>
