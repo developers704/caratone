@@ -23,7 +23,7 @@ import {
 import SectionHeading from "./SectionHeading";
 
 const MODULES = [
-  { icon: BarChart3, name: "Sales Dashboard", route: "/sales", desc: "Net sales, filters, rankings, Top Vendor Models, paycodes, YoY." },
+  { icon: BarChart3, name: "Sales Dashboard", route: "/sales", desc: "Net sales, filters, rankings, Top Products, paycodes, YoY." },
   { icon: BookOpenText, name: "The Edition", route: "/brief", desc: "Executive narrative brief — week, month, season vs. last year." },
   { icon: Boxes, name: "Inventory", route: "/inventory", desc: "Transfer suggestions plus full on-hand by store." },
   { icon: Brain, name: "Intelligence", route: "/intelligence", desc: "Stores, departments, designs, forecast, and issue signals." },

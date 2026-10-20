@@ -1,9 +1,9 @@
 import { CheckCircle2 } from "lucide-react";
 
 const POINTS = [
-  "Net sales equal the full ticket total — repairs, special orders, and memos stay in, nothing is quietly cleaned away.",
-  "Multi-filter by store, department, design, vendor, class, subclass, paycode, and salesperson.",
-  "Top Vendor Models ranked by quantity, with photos, on-hand rollup, and SKU-level drill-down.",
+  "Net sales equal the full ticket total — services, special orders, and memos stay in, nothing is quietly cleaned away.",
+  "Multi-filter by store, department, category, vendor, class, subclass, paycode, and salesperson.",
+  "Top Products ranked by quantity, with photos, on-hand rollup, and SKU-level drill-down.",
   "Whole-cost margin engine — leadership sees true cost, the floor never sees wholesale.",
 ];
 
@@ -56,12 +56,12 @@ export default function DeepDiveSales() {
                 </div>
                 <div className="space-y-2.5 rounded-xl border border-white/5 bg-white/[0.02] p-4">
                   <p className="text-[10px] uppercase tracking-wider text-slate-500">
-                    Top Vendor Models
+                    Top Products
                   </p>
                   {[
-                    { name: "RNG-SOL-1.5CT", dept: "Rings · Solitaire Collection", val: "$18,450" },
-                    { name: "ERG-HAL-0.75", dept: "Earrings · Halo Series", val: "$6,220" },
-                    { name: "CHN-ROPE-14K", dept: "Gold Chain · Rope Classic", val: "$9,780" },
+                    { name: "SKU-A1024", dept: "Category A · Flagship Line", val: "$18,450" },
+                    { name: "SKU-B2210", dept: "Category B · Core Line", val: "$6,220" },
+                    { name: "SKU-C3087", dept: "Category C · Seasonal Line", val: "$9,780" },
                   ].map((r) => (
                     <div
                       key={r.name}

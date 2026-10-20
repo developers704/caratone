@@ -22,9 +22,9 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CaratOne — AI Executive Platform for Jewelry Retail",
+  title: "CaratOne — AI Executive Platform for Multi-Location Retail",
   description:
-    "CaratOne turns daily POS exports into live sales intelligence, floor pricing, inventory transfers, and an AI assistant that knows your stores.",
+    "CaratOne syncs live with your POS to power real-time sales intelligence, pricing, inventory transfers, and an AI assistant that knows your business.",
   icons: {
     icon: "/icon.svg",
     shortcut: "/icon.svg",

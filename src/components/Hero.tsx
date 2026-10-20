@@ -10,14 +10,14 @@ export default function Hero() {
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center animate-rise">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-xs text-slate-300">
             <Sparkles className="h-3.5 w-3.5 text-gold" />
-            Powering multi-store jewelry retail with live AI intelligence
+            Powering multi-location retail with live AI intelligence
           </div>
 
           <h1 className="mt-7 font-display text-4xl font-semibold leading-[1.1] text-white sm:text-6xl">
             The AI executive platform
             <br />
             built for{" "}
-            <span className="text-gradient-gold italic">jewelry retail.</span>
+            <span className="text-gradient-gold italic">any retail business.</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-balance text-base text-slate-400 sm:text-lg">
@@ -100,7 +100,7 @@ export default function Hero() {
                             ? ["CARD", "CASH", "FINANCE"][r]
                             : i === 1
                               ? ["Meridian Mall", "Lakeside Plaza", "Harbor View"][r]
-                              : ["Bridal Sets", "Gold Chains", "Diamond Pendants"][r]}
+                              : ["Category A", "Category B", "Category C"][r]}
                         </span>
                         <span className="font-mono text-slate-200">
                           {i === 0

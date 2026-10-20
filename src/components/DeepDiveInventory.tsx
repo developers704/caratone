@@ -45,9 +45,9 @@ export default function DeepDiveInventory() {
               </div>
               <div className="divide-y divide-white/5">
                 {[
-                  { sku: "ERG-HAL-0.75", desc: "14KT Halo Series Diamond Studs", need: "Meridian Mall", from: "Harbor View", qty: "7 pcs" },
-                  { sku: "RNG-SOL-1.5CT", desc: "Solitaire Collection Diamond Ring", need: "Meridian Mall", from: "Lakeside Plaza", qty: "2 pcs" },
-                  { sku: "CHN-TRI-14K", desc: "14KT Tri-Color Statement Chain", need: "Oakwood Center", from: "Harbor View", qty: "3 pcs" },
+                  { sku: "SKU-A1024", desc: "Best-selling item, Category A", need: "Meridian Mall", from: "Harbor View", qty: "7 pcs" },
+                  { sku: "SKU-B2210", desc: "Flagship item, Category B", need: "Meridian Mall", from: "Lakeside Plaza", qty: "2 pcs" },
+                  { sku: "SKU-C3087", desc: "Seasonal item, Category C", need: "Oakwood Center", from: "Harbor View", qty: "3 pcs" },
                 ].map((r) => (
                   <div key={r.sku} className="flex items-center gap-3 px-5 py-3.5">
                     <span className="rounded-md bg-rose/10 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider text-rose">

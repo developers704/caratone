@@ -34,7 +34,7 @@ export default function TechStack() {
         <SectionHeading
           eyebrow="Engineering"
           title="Built on a rules engine, not guesswork"
-          description="A single source of truth for whole cost, sales totals, and paycode mapping drives the calculator, inventory, and Top Vendor Models alike."
+          description="A single source of truth for whole cost, sales totals, and paycode mapping drives the calculator, inventory, and Top Products alike."
         />
 
         <div className="mt-16 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">

@@ -5,12 +5,12 @@ const PROBLEMS = [
   {
     icon: FileWarning,
     title: "POS data is huge and messy",
-    body: "Live feeds mix repairs, financing memos, split salesperson rows, and payment legs that must reconcile to the cent.",
+    body: "Live feeds mix service tickets, financing memos, split salesperson rows, and payment legs that must reconcile to the cent.",
   },
   {
     icon: Scale,
     title: "Margin isn't in one column",
-    body: "Whole-cost rules — UV gold, diamond divisors, fixed SKUs — have to beat raw ticket profit before leadership can trust it.",
+    body: "Whole-cost rules — unit cost formulas, category multipliers, fixed SKUs — have to beat raw ticket profit before leadership can trust it.",
   },
   {
     icon: Route,
@@ -30,8 +30,8 @@ export default function Problem() {
       <div className="mx-auto max-w-7xl px-6">
         <SectionHeading
           eyebrow="The problem"
-          title="Jewelry retail runs on data that fights back"
-          description="High-SKU inventory, financing-heavy tickets, and dozens of stores generate more data than any team can read by hand — let alone act on same-day."
+          title="Multi-location retail runs on data that fights back"
+          description="High-SKU inventory, complex tickets, and dozens of locations generate more data than any team can read by hand — let alone act on same-day."
         />
 
         <div className="mt-16 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">

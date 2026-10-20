@@ -28,7 +28,7 @@ const ROLES = [
   { name: "Admin", desc: "Full platform, roles, and user administration." },
   { name: "Owner / Executive", desc: "Company-wide sales, discount risk, briefings." },
   { name: "District Manager", desc: "Store-scoped sales and calculator, cost-limited." },
-  { name: "Store Leadership", desc: "Inventory cost, transfers, margin on vendor models." },
+  { name: "Store Leadership", desc: "Inventory cost, transfers, margin on top products." },
   { name: "HR", desc: "Attendance and employee sales views." },
   { name: "Employee", desc: "Sales dashboard — no wholesale or cost exposure." },
 ];
@@ -40,7 +40,7 @@ export default function Security() {
         <SectionHeading
           eyebrow="Security & roles"
           title="Built for a real org chart"
-          description="Not a single shared password — permissions that mirror how a multi-store jewelry operator actually works, down to the API route."
+          description="Not a single shared password — permissions that mirror how a multi-location retail operator actually works, down to the API route."
         />
 
         <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-5">

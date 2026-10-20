@@ -32,7 +32,7 @@ export default function DeepDiveAI() {
                   Meridian Mall did{" "}
                   <span className="font-mono text-teal">$18,420</span> today,
                   up <span className="text-gold-soft">+12.4%</span> vs. the same
-                  Saturday last year. Gold chains and bridal sets led the
+                  Saturday last year. Category A and Category B led the
                   department mix. Want me to open the Sales Dashboard filtered
                   to this store?
                 </div>

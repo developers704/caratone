@@ -47,7 +47,7 @@ export default function Footer() {
               </span>
             </a>
             <p className="mt-4 max-w-xs text-sm text-slate-500">
-              The AI executive platform for multi-store jewelry retail.
+              The AI executive platform for multi-location retail.
             </p>
           </div>
 
