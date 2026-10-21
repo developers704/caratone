@@ -30,7 +30,7 @@ const STACK = [
 export default function TechStack() {
   return (
     <section id="stack" className="relative py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-[1400px] px-6 sm:px-8 lg:px-12">
         <SectionHeading
           eyebrow="Engineering"
           title="Built on a rules engine, not guesswork"
@@ -49,7 +49,7 @@ export default function TechStack() {
               </p>
               <ul className="mt-4 space-y-2.5">
                 {s.items.map((it) => (
-                  <li key={it} className="flex items-center gap-2.5 text-sm text-slate-300">
+                  <li key={it} className="flex items-center gap-2.5 text-sm text-slate-500">
                     <span className="h-1 w-1 shrink-0 rounded-full bg-slate-600" />
                     {it}
                   </li>

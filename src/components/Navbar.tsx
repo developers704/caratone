@@ -28,18 +28,18 @@ export default function Navbar() {
         scrolled ? "py-3" : "py-5"
       }`}
     >
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-[1400px] px-6 sm:px-8 lg:px-12">
         <div
           className={`flex items-center justify-between rounded-2xl px-4 py-3 transition-all duration-300 ${
-            scrolled ? "glass-strong shadow-[0_8px_40px_-12px_rgba(0,0,0,0.6)]" : ""
+            scrolled ? "glass-strong shadow-[0_8px_30px_-16px_rgba(15,23,42,0.25)]" : ""
           }`}
         >
           <a href="#top" className="flex items-center gap-2.5">
-            <span className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-gold-soft via-gold to-[#8a6a2e] shadow-[0_0_24px_-4px_rgba(212,175,106,0.6)]">
-              <Gem className="h-4.5 w-4.5 text-[#1a1306]" strokeWidth={2.4} />
+            <span className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-navy">
+              <Gem className="h-4.5 w-4.5 text-white" strokeWidth={2.4} />
             </span>
-            <span className="font-display text-lg tracking-wide text-white">
-              Carat<span className="text-gradient-gold">One</span>
+            <span className="font-display text-lg tracking-wide text-slate-900">
+              Carat<span className="text-gold-soft">One</span>
             </span>
           </a>
 
@@ -48,7 +48,7 @@ export default function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-sm text-slate-300 transition-colors hover:text-white"
+                className="text-sm text-slate-500 transition-colors hover:text-slate-900"
               >
                 {l.label}
               </a>
@@ -58,20 +58,20 @@ export default function Navbar() {
           <div className="hidden items-center gap-3 lg:flex">
             <a
               href="#contact"
-              className="text-sm text-slate-300 transition-colors hover:text-white"
+              className="text-sm text-slate-500 transition-colors hover:text-slate-900"
             >
               Contact
             </a>
             <a
               href="#demo"
-              className="rounded-xl bg-gradient-to-r from-gold-soft to-gold px-4 py-2 text-sm font-semibold text-[#1a1306] shadow-[0_8px_24px_-8px_rgba(212,175,106,0.7)] transition-transform hover:scale-[1.03] active:scale-[0.98]"
+              className="rounded-xl bg-navy px-4 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(15,23,42,0.5)] transition-transform hover:scale-[1.03] active:scale-[0.98]"
             >
               Request a Demo
             </a>
           </div>
 
           <button
-            className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 text-slate-200 lg:hidden"
+            className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 text-slate-600 lg:hidden"
             onClick={() => setOpen((v) => !v)}
             aria-label="Toggle menu"
           >
@@ -87,7 +87,7 @@ export default function Navbar() {
                   key={l.href}
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="rounded-lg px-3 py-2.5 text-sm text-slate-300 transition-colors hover:bg-white/5 hover:text-white"
+                  className="rounded-lg px-3 py-2.5 text-sm text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-900"
                 >
                   {l.label}
                 </a>
@@ -95,7 +95,7 @@ export default function Navbar() {
               <a
                 href="#demo"
                 onClick={() => setOpen(false)}
-                className="mt-2 rounded-xl bg-gradient-to-r from-gold-soft to-gold px-4 py-2.5 text-center text-sm font-semibold text-[#1a1306]"
+                className="mt-2 rounded-xl bg-navy px-4 py-2.5 text-center text-sm font-semibold text-white"
               >
                 Request a Demo
               </a>

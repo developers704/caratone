@@ -1,108 +1,98 @@
-import { ArrowRight, Sparkles, TrendingUp, Store, Boxes } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-36 pb-20 sm:pt-44 sm:pb-28">
-      <div className="pointer-events-none absolute inset-0 bg-grid [mask-image:radial-gradient(ellipse_70%_60%_at_50%_0%,black,transparent)]" />
-      <div className="pointer-events-none absolute inset-0 bg-radial-glow" />
-
-      <div className="relative mx-auto max-w-7xl px-6">
-        <div className="mx-auto flex max-w-3xl flex-col items-center text-center animate-rise">
-          <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-xs text-slate-300">
-            <Sparkles className="h-3.5 w-3.5 text-gold" />
-            Powering multi-location retail with live AI intelligence
+    <section id="top" className="relative pt-32 pb-16 sm:pt-40 sm:pb-20">
+      <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 lg:px-12">
+        <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
+          <div
+            className="animate-rise inline-flex items-center rounded-full border border-slate-200 px-4 py-1.5 text-xs font-medium text-slate-500"
+            style={{ animationDelay: "0ms" }}
+          >
+            One System Solution
           </div>
 
-          <h1 className="mt-7 font-display text-4xl font-semibold leading-[1.1] text-white sm:text-6xl">
-            The AI executive platform
+          <h1
+            className="animate-rise mt-7 text-balance text-5xl font-semibold leading-[1.1] tracking-tight text-slate-800 sm:text-6xl lg:text-7xl"
+            style={{ animationDelay: "90ms" }}
+          >
+Every Store, One Live View
             <br />
-            built for{" "}
-            <span className="text-gradient-gold italic">any retail business.</span>
+            No Spreadsheets Required
           </h1>
 
-          <p className="mt-6 max-w-xl text-balance text-base text-slate-400 sm:text-lg">
-            CaratOne syncs live with your POS to power real-time sales
-            intelligence, floor pricing, inventory transfers, and compliance —
-            with a built-in AI assistant that knows every store, SKU, and
-            ticket.
+          <p
+            className="animate-rise mt-7 max-w-2xl text-balance text-base leading-relaxed text-slate-600 sm:text-lg"
+            style={{ animationDelay: "180ms" }}
+          >
+            CaratOne is an AI-powered operations system for multi-location
+            retail. It syncs live with your POS — so your sales, pricing, and
+            inventory run themselves, and your time goes into the business.
           </p>
 
-          <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row">
+          <div
+            className="animate-rise mt-9"
+            style={{ animationDelay: "270ms" }}
+          >
             <a
               href="#demo"
-              className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-gold-soft to-gold px-6 py-3.5 text-sm font-semibold text-[#1a1306] shadow-[0_12px_32px_-10px_rgba(212,175,106,0.7)] transition-transform hover:scale-[1.03] active:scale-[0.98]"
+              className="group inline-flex items-center gap-2 rounded-xl bg-navy px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_14px_32px_-12px_rgba(15,23,42,0.5)] active:translate-y-0 active:scale-[0.98]"
             >
-              See the Platform
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              Get Started
+              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
-            <a
-              href="#modules"
-              className="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/[0.02] px-6 py-3.5 text-sm font-semibold text-slate-200 transition-colors hover:bg-white/[0.06]"
-            >
-              Explore Modules
-            </a>
-          </div>
-
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-xs text-slate-500">
-            <span className="flex items-center gap-1.5">
-              <Store className="h-3.5 w-3.5 text-teal" /> 31 stores, one console
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Boxes className="h-3.5 w-3.5 text-violet" /> Direct POS sync, live dashboard
-            </span>
-            <span className="flex items-center gap-1.5">
-              <TrendingUp className="h-3.5 w-3.5 text-gold" /> Role-based, audit-ready
-            </span>
           </div>
         </div>
 
         {/* Hero product frame */}
-        <div className="relative mx-auto mt-20 max-w-5xl animate-rise [animation-delay:150ms]">
-          <div className="absolute -inset-x-10 -inset-y-10 -z-10 rounded-[3rem] bg-gradient-to-tr from-violet/10 via-teal/10 to-gold/10 blur-3xl" />
-          <div className="glass-strong animate-float overflow-hidden rounded-2xl shadow-[0_40px_120px_-30px_rgba(0,0,0,0.8)]">
-            <div className="flex items-center gap-2 border-b border-white/5 px-5 py-3">
-              <span className="h-2.5 w-2.5 rounded-full bg-rose/70" />
-              <span className="h-2.5 w-2.5 rounded-full bg-gold/70" />
-              <span className="h-2.5 w-2.5 rounded-full bg-teal/70" />
+        <div
+          className="animate-rise relative mx-auto mt-16 max-w-5xl"
+          style={{ animationDelay: "380ms" }}
+        >
+          <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
+            <div className="flex items-center gap-2 border-b border-slate-200 bg-white px-5 py-3">
+              <span className="h-2.5 w-2.5 rounded-full bg-rose/60" />
+              <span className="h-2.5 w-2.5 rounded-full bg-gold/60" />
+              <span className="h-2.5 w-2.5 rounded-full bg-teal/60" />
               <span className="ml-3 font-mono text-[11px] text-slate-500">
                 ai-assistant.caratone.ai/sales
               </span>
             </div>
-            <div className="grid grid-cols-1 gap-px bg-white/5 p-px sm:grid-cols-4">
+            <div className="grid grid-cols-1 gap-px bg-slate-200 p-px sm:grid-cols-4">
               {[
-                { label: "Net Sales", value: "$214,680", change: "+12.4% YoY", color: "text-teal" },
-                { label: "Unique Transactions", value: "168", change: "Distinct tickets", color: "text-violet" },
-                { label: "Qty Sold", value: "327", change: "Pieces sold", color: "text-gold-soft" },
-                { label: "Avg. Sale Value", value: "$656", change: "Net ÷ pieces", color: "text-rose" },
+                { label: "Net Sales", value: "$214,680", change: "+12.4% YoY" },
+                { label: "Unique Transactions", value: "168", change: "Distinct tickets" },
+                { label: "Qty Sold", value: "327", change: "Pieces sold" },
+                { label: "Avg. Sale Value", value: "$656", change: "Net ÷ pieces" },
               ].map((kpi) => (
-                <div key={kpi.label} className="bg-[#0a0b13] p-5 sm:p-6">
+                <div key={kpi.label} className="bg-white p-5 sm:p-6">
                   <p className="text-[11px] uppercase tracking-wider text-slate-500">
                     {kpi.label}
                   </p>
-                  <p className={`mt-2 font-display text-2xl sm:text-3xl ${kpi.color}`}>
+                  <p className="mt-2 text-2xl font-semibold text-slate-800 sm:text-3xl">
                     {kpi.value}
                   </p>
                   <p className="mt-1 text-[11px] text-slate-500">{kpi.change}</p>
                 </div>
               ))}
             </div>
-            <div className="grid grid-cols-1 gap-px bg-white/5 p-px sm:grid-cols-3">
+            <div className="grid grid-cols-1 gap-px bg-slate-200 p-px sm:grid-cols-3">
               {["Paycodes", "Top Stores", "Top Departments"].map((col, i) => (
-                <div key={col} className="bg-[#0a0b13] p-5">
-                  <p className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-slate-400">
+                <div key={col} className="bg-white p-5">
+                  <p className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">
                     {col}
                   </p>
                   <div className="space-y-2.5">
                     {[0, 1, 2].map((r) => (
                       <div key={r} className="flex items-center justify-between text-xs">
-                        <span className="text-slate-400">
+                        <span className="text-slate-500">
                           {i === 0
                             ? ["CARD", "CASH", "FINANCE"][r]
                             : i === 1
                               ? ["Meridian Mall", "Lakeside Plaza", "Harbor View"][r]
                               : ["Category A", "Category B", "Category C"][r]}
                         </span>
-                        <span className="font-mono text-slate-200">
+                        <span className="font-mono text-slate-600">
                           {i === 0
                             ? ["$91,240", "$78,560", "$32,110"][r]
                             : i === 1

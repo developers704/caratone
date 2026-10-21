@@ -27,7 +27,7 @@ const PROBLEMS = [
 export default function Problem() {
   return (
     <section className="relative py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-[1400px] px-6 sm:px-8 lg:px-12">
         <SectionHeading
           eyebrow="The problem"
           title="Multi-location retail runs on data that fights back"
@@ -41,11 +41,11 @@ export default function Problem() {
               className="card-hover glass animate-rise rounded-2xl p-6"
               style={{ animationDelay: `${i * 90}ms` }}
             >
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/[0.04] ring-1 ring-white/10">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 ring-1 ring-slate-200">
                 <p.icon className="h-5 w-5 text-rose" strokeWidth={1.8} />
               </div>
-              <h3 className="mt-5 text-sm font-semibold text-white">{p.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-400">{p.body}</p>
+              <h3 className="mt-5 text-sm font-semibold text-slate-900">{p.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-500">{p.body}</p>
             </div>
           ))}
         </div>

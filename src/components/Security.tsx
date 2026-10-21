@@ -36,7 +36,7 @@ const ROLES = [
 export default function Security() {
   return (
     <section id="security" className="relative py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-[1400px] px-6 sm:px-8 lg:px-12">
         <SectionHeading
           eyebrow="Security & roles"
           title="Built for a real org chart"
@@ -51,26 +51,26 @@ export default function Security() {
                 className="card-hover glass animate-rise rounded-2xl p-6"
                 style={{ animationDelay: `${i * 80}ms` }}
               >
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/[0.04] ring-1 ring-white/10">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 ring-1 ring-slate-200">
                   <p.icon className="h-5 w-5 text-teal" strokeWidth={1.8} />
                 </div>
-                <h3 className="mt-5 text-sm font-semibold text-white">{p.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-400">{p.body}</p>
+                <h3 className="mt-5 text-sm font-semibold text-slate-900">{p.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-500">{p.body}</p>
               </div>
             ))}
           </div>
 
           <div className="glass-strong animate-rise rounded-2xl p-6 lg:col-span-2">
-            <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-500">
               Permission matrix
             </p>
             <div className="mt-4 space-y-1">
               {ROLES.map((r) => (
                 <div
                   key={r.name}
-                  className="flex items-center justify-between gap-4 rounded-lg px-3 py-2.5 transition-colors hover:bg-white/[0.03]"
+                  className="flex items-center justify-between gap-4 rounded-lg px-3 py-2.5 transition-colors hover:bg-slate-50"
                 >
-                  <span className="shrink-0 rounded-md bg-white/[0.05] px-2.5 py-1 text-[10px] font-semibold text-slate-200">
+                  <span className="shrink-0 rounded-md bg-slate-100 px-2.5 py-1 text-[10px] font-semibold text-slate-600">
                     {r.name}
                   </span>
                   <span className="text-right text-[11px] text-slate-500">{r.desc}</span>

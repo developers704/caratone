@@ -1,23 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --background: #05060a;
-  --foreground: #e7e9f0;
+  --background: #ffffff;
+  --foreground: #1e293b;
 
-  --panel: #0b0d16;
-  --panel-border: rgba(148, 163, 184, 0.12);
+  --panel: #f6f8fb;
+  --panel-border: rgba(15, 23, 42, 0.08);
 
-  --gold: #d4af6a;
-  --gold-soft: #f1d9a8;
-  --teal: #4fd1c5;
-  --violet: #8b7bf7;
-  --rose: #e88aa3;
+  --navy: #0f172a;
+  --navy-soft: #1e293b;
+  --gold: #c99a4a;
+  --gold-soft: #b9832f;
+  --teal: #0ea5a0;
+  --violet: #6d5bd0;
+  --rose: #d1577a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-panel: var(--panel);
+  --color-navy: var(--navy);
+  --color-navy-soft: var(--navy-soft);
   --color-gold: var(--gold);
   --color-gold-soft: var(--gold-soft);
   --color-teal: var(--teal);
@@ -35,48 +39,48 @@ body {
 }
 
 ::selection {
-  background: rgba(212, 175, 106, 0.3);
-  color: #fff;
+  background: rgba(15, 23, 42, 0.12);
+  color: #0f172a;
 }
 
 /* --- Ambient background --- */
 .bg-grid {
   background-image:
-    linear-gradient(to right, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+    linear-gradient(to right, rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
   background-size: 64px 64px;
 }
 
 .bg-radial-glow {
   background:
-    radial-gradient(60% 50% at 18% 0%, rgba(139, 123, 247, 0.22) 0%, transparent 60%),
-    radial-gradient(50% 45% at 85% 10%, rgba(79, 209, 197, 0.16) 0%, transparent 60%),
-    radial-gradient(40% 35% at 50% 100%, rgba(212, 175, 106, 0.1) 0%, transparent 60%);
+    radial-gradient(60% 50% at 18% 0%, rgba(109, 91, 208, 0.08) 0%, transparent 60%),
+    radial-gradient(50% 45% at 85% 10%, rgba(14, 165, 160, 0.07) 0%, transparent 60%),
+    radial-gradient(40% 35% at 50% 100%, rgba(201, 154, 74, 0.06) 0%, transparent 60%);
 }
 
-/* --- Glass surfaces --- */
+/* --- Glass / panel surfaces --- */
 .glass {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015));
+  background: #ffffff;
   border: 1px solid var(--panel-border);
-  backdrop-filter: blur(14px);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
 }
 
 .glass-strong {
-  background: linear-gradient(180deg, rgba(14, 16, 26, 0.92), rgba(9, 10, 18, 0.92));
+  background: #ffffff;
   border: 1px solid var(--panel-border);
-  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 30px -12px rgba(15, 23, 42, 0.12);
 }
 
 /* --- Text treatments --- */
 .text-gradient-gold {
-  background: linear-gradient(90deg, #f1d9a8 0%, #d4af6a 45%, #b9924f 100%);
+  background: linear-gradient(90deg, #8a6a2e 0%, #c99a4a 50%, #8a6a2e 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .text-gradient-cool {
-  background: linear-gradient(90deg, #e7e9f0 0%, #b9c2d6 100%);
+  background: linear-gradient(90deg, #0f172a 0%, #475569 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -97,8 +101,8 @@ body {
 
 .card-hover:hover {
   transform: translateY(-4px);
-  border-color: rgba(212, 175, 106, 0.35);
-  box-shadow: 0 24px 60px -24px rgba(0, 0, 0, 0.65);
+  border-color: rgba(15, 23, 42, 0.16);
+  box-shadow: 0 24px 48px -24px rgba(15, 23, 42, 0.18);
 }
 
 /* --- Scrollbar --- */
@@ -110,11 +114,11 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(148, 163, 184, 0.25);
+  background: rgba(15, 23, 42, 0.15);
   border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(148, 163, 184, 0.4);
+  background: rgba(15, 23, 42, 0.25);
 }
 
 /* --- Reveal animation --- */

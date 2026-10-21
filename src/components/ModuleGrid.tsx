@@ -48,7 +48,7 @@ const MODULES = [
 export default function ModuleGrid() {
   return (
     <section id="modules" className="relative py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-[1400px] px-6 sm:px-8 lg:px-12">
         <SectionHeading
           eyebrow="Platform"
           title="Twenty modules. One executive console."
@@ -63,12 +63,12 @@ export default function ModuleGrid() {
               style={{ animationDelay: `${(i % 8) * 60}ms` }}
             >
               <div className="flex items-start justify-between">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/[0.04] ring-1 ring-white/10 transition-colors group-hover:ring-gold/30">
-                  <m.icon className="h-4.5 w-4.5 text-slate-300 transition-colors group-hover:text-gold-soft" strokeWidth={1.7} />
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 ring-1 ring-slate-200 transition-colors group-hover:ring-gold/30">
+                  <m.icon className="h-4.5 w-4.5 text-slate-500 transition-colors group-hover:text-gold-soft" strokeWidth={1.7} />
                 </div>
-                <span className="font-mono text-[10px] text-slate-600">{m.route}</span>
+                <span className="font-mono text-[10px] text-slate-500">{m.route}</span>
               </div>
-              <h3 className="mt-4 text-sm font-semibold text-white">{m.name}</h3>
+              <h3 className="mt-4 text-sm font-semibold text-slate-900">{m.name}</h3>
               <p className="mt-1.5 text-xs leading-relaxed text-slate-500">{m.desc}</p>
             </div>
           ))}

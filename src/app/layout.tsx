@@ -37,7 +37,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${sans.variable} ${display.variable} ${mono.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#05060a] text-slate-200">
+      <body className="min-h-full flex flex-col bg-white text-slate-600">
         {children}
       </body>
     </html>
